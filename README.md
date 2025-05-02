@@ -6,4 +6,5 @@ A festive promo banner with falling snow animation and hover effects.
 
 **Tech:** HTML, CSS, JS  
 ![preview](screenshots/christmas-promo.png)  
-[Live Demo](https://mansi7664.github.io/repo-name/christmas-promo/christmas-promo.html)
+[Live Demo](https://mansi7664.github.io/UI-Projects-by-Mansi/christmas-promo/christmas-promo.html)
+
