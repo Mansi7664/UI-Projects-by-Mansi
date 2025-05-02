@@ -5,14 +5,14 @@ some of the UI Projects, mainly focusing on CSS and HTML
 404 not found page.
 
 **Tech:** HTML, CSS, JS  
-![preview](screenshots/christmas-promo.png)  
+![preview](screenshots/404notfound.png)  
 [Live Demo](https://mansi7664.github.io/UI-Projects-by-Mansi/404-notfound/404-notfound.html)
 
 ### 🎄 christmas-promo
 A festive promo banner with falling snow animation and hover effects.
 
 **Tech:** HTML, CSS, JS  
-![preview](screenshots/404notfound.png)  
+![preview](screenshots/christmas-promo.png)  
 [Live Demo](https://mansi7664.github.io/UI-Projects-by-Mansi/christmas-promo/christmas-promo.html)
 
 
@@ -55,6 +55,14 @@ A stylish social login screen that mimics modern authentication screens.
 **Tech:** HTML, CSS, JS  
 ![preview](screenshots/social-login.png)  
 [Live Demo](https://mansi7664.github.io/UI-Projects-by-Mansi/social-login/social-login.html)
+
+### Subscribe Modal
+A stylish subscribe modal window with email input field.
+
+**Feastures:** Email input, Responsive design
+**Tech:** HTML, CSS, JS  
+![preview](screenshots/subscribe-modal.png)  
+[Live Demo](https://mansi7664.github.io/UI-Projects-by-Mansi/subscribe-modal/subscribe-modal.html)
 
 
 
