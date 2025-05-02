@@ -1,13 +1,6 @@
 # UI-Projects-by-Mansi
 some of the UI Projects, mainly focusing on CSS and HTML
 
-### 404-notfound
-404 not found page.
-
-**Tech:** HTML, CSS, JS  
-![preview](screenshots/404notfound.png)  
-[Live Demo](https://mansi7664.github.io/UI-Projects-by-Mansi/404-notfound/404-notfound.html)
-
 ### 🎄 christmas-promo
 A festive promo banner with falling snow animation and hover effects.
 
@@ -63,6 +56,13 @@ A stylish subscribe modal window with email input field.
 **Tech:** HTML, CSS, JS  
 ![preview](screenshots/subscribe-modal.png)  
 [Live Demo](https://mansi7664.github.io/UI-Projects-by-Mansi/subscribe-modal/subscribe-modal.html)
+
+### 404-notfound
+404 not found page.
+
+**Tech:** HTML, CSS, JS  
+![preview](screenshots/404notfound.png)  
+[Live Demo](https://mansi7664.github.io/UI-Projects-by-Mansi/404-notfound/404-notfound.html)
 
 
 
