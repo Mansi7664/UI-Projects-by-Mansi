@@ -1,0 +1,123 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(243, 149, 213);
+    font-size: 0.83rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 1rem;
+}
+
+main {
+    background: white;
+    box-shadow: 10px 11px 9px 0px rgb(74 60 69);
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 1rem;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.image-item {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0.75rem 0;
+}
+
+.list-item p {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+button {
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-top: 1rem;
+    background: linear-gradient(45deg, rgb(247 36 180), rgb(226 171 208));
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(45deg, rgb(221, 123, 190), rgb(234, 190, 219));
+    cursor: pointer;
+}
+
+button:active {
+    background: linear-gradient(45deg, rgb(59, 138, 203), rgb(139, 175, 205));
+    cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    main {
+        padding: 1.5rem 1rem;
+        max-width: 90%;
+    }
+    
+    .image-item {
+        height: 45px;
+        width: 45px;
+    }
+
+    button {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 1rem;
+        max-width: 95%;
+    }
+    
+    li {
+        gap: 0.75rem;
+    }
+    
+    .image-item {
+        height: 40px;
+        width: 40px;
+    }
+
+    .list-item p {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
+    }
+}

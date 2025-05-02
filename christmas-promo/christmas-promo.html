@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="./christmas-promo.js" async defer></script>
+
+    <link rel="stylesheet" href="./christmas-promo.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="h-screen w-screen overflow-hidden">
+    <main class="w-full h-full">
+        <div class="w-full h-full">
+            <!-- Responsive SVG wrapper -->
+            <svg class="w-full h-full object-cover" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect width="100%" height="100%" fill="#c62828" />
+                <!-- Snowflakes -->
+                <circle cx="100" cy="100" r="10" fill="#ffe0b2" />
+                <circle cx="200" cy="150" r="10" fill="#ffe0b2" />
+                <circle cx="300" cy="90" r="10" fill="#ffe0b2" />
+                <circle cx="400" cy="120" r="10" fill="#ffe0b2" />
+                <circle cx="500" cy="80" r="10" fill="#ffe0b2" />
+                <circle cx="600" cy="170" r="10" fill="#ffe0b2" />
+                <!-- Trees -->
+                <polygon points="100,300 90,330 110,330" fill="#2e7d32" />
+                <polygon points="100,320 85,350 115,350" fill="#2e7d32" />
+                <polygon points="100,340 80,370 120,370" fill="#2e7d32" />
+                <rect x="95" y="370" width="10" height="20" fill="#6d4c41" />
+
+                <polygon points="700,300 680,330 720,330" fill="#2e7d32" />
+                <polygon points="700,320 670,350 730,350" fill="#2e7d32" />
+                <polygon points="700,340 660,370 740,370" fill="#2e7d32" />
+                <rect x="695" y="370" width="10" height="20" fill="#6d4c41" />
+
+                <!-- Gift box -->
+                <rect x="350" y="400" width="40" height="40" fill="#fdd835" />
+                <line x1="370" y1="400" x2="370" y2="440" stroke="#d84315" stroke-width="4" />
+                <line x1="350" y1="420" x2="390" y2="420" stroke="#d84315" stroke-width="4" />
+            </svg>
+            <div id="modal-window" class="modal-window">
+                <button id="modal-close" class="modal-close" aria-label="Close modal">&times;</button>
+                <div class="header">
+                    <div class="tree-img"><svg width="55" height="44" viewBox="0 0 64 64"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <!-- Tree trunk -->
+                            <rect x="30" y="56" width="4" height="8" fill="#1E2A3B" />
+
+                            <!-- Tree layers -->
+                            <polygon points="32,4 24,16 40,16" fill="#1E2A3B" />
+                            <polygon points="32,12 20,28 44,28" fill="#1E2A3B" />
+                            <polygon points="32,22 16,40 48,40" fill="#1E2A3B" />
+                            <polygon points="32,32 12,52 52,52" fill="#1E2A3B" />
+                        </svg></div>
+                    <div>
+                        <h2>Merry Chisrtmas!</h2>
+                    </div>
+                </div>
+                <div class="body">
+                    <div>
+                        <p>You completed all your December's tasks so we decided to get you a gift:</p>
+                    </div>
+                    <div class="offer">
+                        <p>50% off on your Yearly Premium Plan</p>
+                    </div>
+                    <div>
+                        <button id="gift-button" class="gift-button">GET YOUR GIFT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

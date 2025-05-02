@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main class="style-guide | container">
+        <section class="section buttons | left-column">
+            <h2 class="section-title">Buttons</h2>
+            <div class="buttons-wrapper">
+                <div>
+                    <h3>Default</h3>
+                    <button class="btn primary-btn">Primary Button</button>
+                    <button class="btn secondary-btn">Secondary Button</button>
+                </div>
+                <div>
+                    <h3>Hovered</h3>
+                    <button class="btn primary-btn btn-hovered">Primary Button</button>
+                    <button class="btn secondary-btn btn-hovered">Secondary Button</button>
+                </div>
+            </div>
+        </section>
+        <section class="section colors | right-column">
+            <h2 class="section-title">Colours</h2>
+            <div class="colors-wrapper">
+                <div class="square black">#242E4C</div>
+                <div class="square blue">#738BFD</div>
+                <div class="square orange">#F55623</div>
+                <div class="square gray">#767E96</div>
+                <div class="square light-gray">#E9EAED</div>
+                <div class="square very-light-gray">#F3F4F6</div>
+            </div>
+        </section>
+        <section class="section inputs | left-column">
+            <h2 class="section-title">Inputs</h2>
+            <div class="inputs-wrapper">
+                <div class="form-group input-default">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" id="full-name" placeholder="ex. Linda Owen">
+                </div>
+                <div class="form-group input-filled">
+                    <label for="your-name">Your Name</label>
+                    <input type="text" id="your-name" placeholder="Anthony Webb">
+                </div>
+                <div class="form-group input-focused-error">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="5+ characters">
+                    <p class="error">Your password must be at least <span>6 characters</span> long.</p>
+                </div>
+                <div class="form-group input-inactive">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="myemail@adress.com">
+                </div>
+            </div>
+        </section>
+        <section class="section fonts | right-column">
+            <h2 class="section-title">Fonts</h2>
+            <div class="fonts-wrapper">
+                <p class="page-title">Page Title | 28px Bold #1E1A50</p>
+                <p class="secondary-title">Secondary Title | 16px Bold #1E1A50</p>
+                <p class="tertiary-title">Tertiary Title | 14px Bold #1E1A50</p>
+                <p class="montserrat-title">Link | Montserrat 14px Medium #738BFD</p>
+                <p class="input-placeholder">Input Placeholder | 14px Medium #767E96</p>
+                <p class="basic-paragraph">Basic Paragraph | 12px Medium #1A2950</p>
+                <p class="board-summary">Board Summary Label | 12px Medium #767E96</p>
+                <p class="alert">Alert Message | 12px Medium #F55623</p>
+            </div>
+        </section>
+        <section class="section cards | left-column">
+            <h2 class="section-title">Cards</h2>
+            <div class="cards-wrapper">
+                <div>
+                    <h3>Default card background</h3>
+                    <div class="default-card"></div>
+                </div>
+                <div>
+                    <h3>Hovered card background</h3>
+                    <div class="hovered-card"></div>
+                </div>
+            </div>
+        </section>
+        <section class="section icons | right-column">
+            <h2 class="section-title">Icons</h2>
+            <div class="icons-wrapper">
+                <div class="fill-dark">
+                    <svg class="icon-arrow-down" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M12 14.95q-.2 0-.375-.062t-.325-.213L6.675 10.05q-.275-.275-.262-.688t.287-.687q.275-.275.7-.275t.7.275l3.9 3.9l3.925-3.925q.275-.275.688-.263t.687.288q.275.275.275.7t-.275.7l-4.6 4.6q-.15.15-.325.213T12 14.95Z" />
+                    </svg>
+                    <svg class="icon-calendar" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M5 22q-.825 0-1.413-.588T3 20V6q0-.825.588-1.413T5 4h1V2h2v2h8V2h2v2h1q.825 0 1.413.588T21 6v14q0 .825-.588 1.413T19 22H5Zm0-2h14V10H5v10ZM5 8h14V6H5v2Zm0 0V6v2Zm7 6q-.425 0-.713-.288T11 13q0-.425.288-.713T12 12q.425 0 .713.288T13 13q0 .425-.288.713T12 14Zm-4 0q-.425 0-.713-.288T7 13q0-.425.288-.713T8 12q.425 0 .713.288T9 13q0 .425-.288.713T8 14Zm8 0q-.425 0-.713-.288T15 13q0-.425.288-.713T16 12q.425 0 .713.288T17 13q0 .425-.288.713T16 14Zm-4 4q-.425 0-.713-.288T11 17q0-.425.288-.713T12 16q.425 0 .713.288T13 17q0 .425-.288.713T12 18Zm-4 0q-.425 0-.713-.288T7 17q0-.425.288-.713T8 16q.425 0 .713.288T9 17q0 .425-.288.713T8 18Zm8 0q-.425 0-.713-.288T15 17q0-.425.288-.713T16 16q.425 0 .713.288T17 17q0 .425-.288.713T16 18Z" />
+                    </svg>
+                    <svg class="icon-eraser" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                        viewBox="0 0 36 36">
+                        <path
+                            d="M28 32H15.33L19 28.37l-9.9-9.9L3.54 24a1.83 1.83 0 0 0 0 2.6L9 32H3a1 1 0 0 0 0 2h25a1 1 0 0 0 0-2Z"
+                            class="clr-i-solid clr-i-solid-path-1" />
+                        <path
+                            d="m34.08 10.65l-7.3-7.3a1.83 1.83 0 0 0-2.6 0L10.47 17.06l9.9 9.9l13.71-13.71a1.85 1.85 0 0 0 0-2.6Z"
+                            class="clr-i-solid clr-i-solid-path-2" />
+                        <path fill="none" d="M0 0h36v36H0z" />
+                    </svg>
+                    <svg class="icon-pen" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                        <path
+                            d="M12 3c-1.1 0-2 .9-2 2s.9 2 2 2s2-.9 2-2s-.9-2-2-2Zm0 14c-1.1 0-2 .9-2 2s.9 2 2 2s2-.9 2-2s-.9-2-2-2Zm0-7c-1.1 0-2 .9-2 2s.9 2 2 2s2-.9 2-2s-.9-2-2-2Z" />
+                    </svg>
+                    <svg class="icon-search" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5q0-2.725 1.888-4.612T9.5 3q2.725 0 4.612 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3l-1.4 1.4ZM9.5 14q1.875 0 3.188-1.313T14 9.5q0-1.875-1.313-3.188T9.5 5Q7.625 5 6.312 6.313T5 9.5q0 1.875 1.313 3.188T9.5 14Z" />
+                    </svg>
+                    <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                        viewBox="0 0 24 24">
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                    </svg>
+                    <svg class="icon-squares" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                        viewBox="0 0 256 256">
+                        <path
+                            d="M120 56v48a16 16 0 0 1-16 16H56a16 16 0 0 1-16-16V56a16 16 0 0 1 16-16h48a16 16 0 0 1 16 16Zm80-16h-48a16 16 0 0 0-16 16v48a16 16 0 0 0 16 16h48a16 16 0 0 0 16-16V56a16 16 0 0 0-16-16Zm-96 96H56a16 16 0 0 0-16 16v48a16 16 0 0 0 16 16h48a16 16 0 0 0 16-16v-48a16 16 0 0 0-16-16Zm96 0h-48a16 16 0 0 0-16 16v48a16 16 0 0 0 16 16h48a16 16 0 0 0 16-16v-48a16 16 0 0 0-16-16Z" />
+                    </svg>
+                    <svg class="icon-add" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                        <path d="M11 19v-6H5v-2h6V5h2v6h6v2h-6v6h-2Z" />
+                    </svg>
+                </div>
+                <div class="fill-light">
+                    <svg class="icon-profile" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M12 16q-1.725 0-3.225.525T6 18v2h12v-2q-1.275-.95-2.775-1.475T12 16Zm-6 6q-.825 0-1.413-.588T4 20V4q0-.825.588-1.413T6 2h12q.825 0 1.413.588T20 4v16q0 .825-.588 1.413T18 22H6Zm6-8q1.45 0 2.475-1.025T15.5 10.5q0-1.45-1.025-2.475T12 7q-1.45 0-2.475 1.025T8.5 10.5q0 1.45 1.025 2.475T12 14Z" />
+                    </svg>
+                    <svg class="icon-photo" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                        viewBox="0 0 14 14">
+                        <g fill="none" stroke="var(--clr-accent-gray)" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="13" height="13" x=".5" y=".5" rx="1" transform="rotate(180 7 7)" />
+                            <path d="M.5 11h13m-9.66 0l5.21-4.88a.5.5 0 0 1 .64 0l3.81 2.73" />
+                            <circle cx="4.5" cy="4.5" r="1.5" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

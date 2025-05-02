@@ -1,0 +1,101 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: rgb(183, 203, 241, 0.5);
+
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background: linear-gradient(45deg, rgb(79, 144, 241, 0.7), rgb(14, 105, 201));
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 0 0 20px rgb(150, 183, 244);
+    border-radius: 10px;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.icon-wrapper {
+    padding-bottom: 7%;
+    max-width: 400px;
+    position: relative;
+    margin: 0 auto;
+}
+
+input {
+    width: 100%;
+    border-radius: 30px;
+    padding: 1rem;
+    background: rgb(171, 170, 170, 0.7);
+    border: 2px solid white;
+    color: white;
+}
+
+input::placeholder {
+    color: white;
+}
+
+.login-button {
+    border: none;
+    background: white;
+    color: black;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    top: 5%;
+    right: 1%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-wrapper {
+    width: 100%;
+    bottom: -50px;
+    left: 0;
+    position: absolute;
+}
+
+.image-wrapper img {
+    margin: 0 1rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 5px rgb(0, 0, 0, 0.3);
+    border: 3px solid white;
+    width: 75px;
+}
+@media screen and (width < 650px){
+    .image-wrapper img:nth-child(n+5) {
+        display: none;
+    }
+
+    .image-wrapper img {
+        width: 50px;
+    }
+}
+
+@media screen and (width < 550px){
+    .image-wrapper img:nth-child(n+4) {
+        display: none;
+    }
+}
+
+@media screen and (width < 400px){
+    .image-wrapper img:nth-child(n+3) {
+        display: none;
+    }
+}

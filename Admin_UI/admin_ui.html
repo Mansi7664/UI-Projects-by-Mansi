@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin UI</title>
+    <link rel="stylesheet" type="text/css" href="./admin_ui.css">
+    <!-- knouckout -->
+    <script src="./framework/lib/bower_components/knockout/dist/knockout.js" type="text/javascript"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="./framework/lib/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Bootstrap JS -->
+    <script src="./framework/lib/jquery/dist/jquery.slim.min.js" async defer></script>
+    <script src="./framework/lib/bootstrap/dist/js/bootstrap.min.js" async defer></script>
+
+    <script src="./admin_ui.js" async defer></script>
+</head>
+
+<body>
+    <main id="adminui" class="form-main-container">
+        <h1>Admin UI</h1>
+        <div class="search-box">
+            <input name="search" id="search-box" type="text"
+                placeholder="Search by name, email or role" data-bind="value: searchKey, valueUpdate: 'afterkeydown'" /></input>
+        </div>
+        <!-- ko if: showData() -->
+        <div id="table-container" class="table-responsive">
+            <table id="admin_example" class="display">
+                <thead>
+                    <tr>
+                        <th><input name="selectionParent" name="selectAll" name="" type="checkbox" id="selection_parent"
+                                value="selectAll"></th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody data-bind="foreach: pagingDataSource()">
+                    <tr>
+                        <td><input type="checkbox" data-bind="attr:{'id':'checkbox_'+id, 'value':id}" name="selection"
+                                value="">
+                        </td>
+                        <!-- ko if: $parent.isEditing() !== $data.id -->
+                        <td data-bind="text: name"></td>
+                        <!-- /ko -->
+                        <!-- ko if: $parent.isEditing() === $data.id -->
+                        <td><input data-bind="value: name, attr:{'id':'name_'+id}" class="editName" /></td>
+                        <!-- /ko -->
+                        <!-- ko if: $parent.isEditing() !== $data.id -->
+                        <td data-bind="text: $data.email"></td>
+                        <!-- /ko -->
+                        <!-- ko if: $parent.isEditing() === $data.id -->
+                        <td><input data-bind="value: email, attr:{'id':'email_'+id}" class="editEmail" /></td>
+                        <!-- /ko -->
+                        <!-- ko if: $parent.isEditing() !== $data.id -->
+                        <td data-bind="text: $data.role"></td>
+                        <!-- /ko -->
+                        <!-- ko if: $parent.isEditing() === $data.id -->
+                        <td>
+                            <select class="editRole" name="roles" data-bind="value: role, attr:{'id':'role_'+id}">
+                                <option value="member">member</option>
+                                <option value="admin">admin</option>
+                            </select>
+                        </td>                        
+                        <!-- /ko -->
+                        <td>
+                            <!-- ko if: $parent.isEditing() !== $data.id -->
+                            <button type="button" class="edit_button" data-bind="click: function() { $parent.editRecord($data) }"><img
+                                    alt="edit" src="./images/edit.svg"></img></button>
+                            <button type="button" class="delete_button" data-bind="click:$parent.deleteRecord.bind($data.id)"><img
+                                    alt="delete" src="./images/delete.svg"></button>
+                            <!-- /ko -->
+                            <!-- ko if: $parent.isEditing() === $data.id -->
+                            <button type="submit" class="save_button" data-bind="click: function() { $parent.saveRecord($data) }"><img
+                                    alt="submit" src="./images/save.svg"></img></button>
+                            <button type="button" class="cancel_button" data-bind="click:$parent.cancelEdit"><img alt="cancel"
+                                    src="./images/cancel.svg"></button>
+                            <!-- /ko -->
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <nav id="pagination-container">
+        </nav>
+        <div class="button-conatiner">
+            <button type="button" class="delete-mutiple-button" data-bind="click:deleteMultipleRecords.bind($data)">Deleted
+                Selected</button>
+        </div>
+        <!-- /ko -->
+    </main>
+</body>
+
+</html>

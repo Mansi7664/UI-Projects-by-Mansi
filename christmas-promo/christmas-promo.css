@@ -1,0 +1,156 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p,
+button,
+textarea {
+    font: inherit;
+}
+
+:root {
+    --fs-300: clamp(0.63rem, calc(0.83rem + 0.02vw), 0.84rem);
+
+    --clr-background: #fbfbfb;
+    --clr-primary: #242e4c;
+}
+
+body {
+    /* layout */
+    min-height: 100vh;
+    min-height: 100dvh;
+
+    /*visuals*/
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--clr-background);
+    font-size: (--fs-300);
+
+    /*misc*/
+    display: flex;
+    overflow-y: scroll;
+}
+
+/* utility classes */
+.container {
+    width: min(100% - 3rem, 140ch);
+    margin-inline: auto;
+}
+
+@media (max-width: 50em) {
+    .container {
+        width: min(100% - 3rem, 70ch);
+        margin-inline: auto;
+    }
+}
+
+/* Modal Window styling */
+.modal-window {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 4rem;
+    border-radius: 5px 20px 5px 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: center;
+}
+
+.modal-window.hidden {
+    display: none;
+}
+
+@media (max-width: 50rem) {
+    .modal-window {
+        max-width: 90vw;
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+}
+
+.tree-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.3rem;
+}
+
+.modal-window .header h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.modal-window .body {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+}
+
+.modal-window .offer {
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    color: #f49b0d;
+}
+
+.gift-button {
+    background-color: #242e4c;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.gift-button:hover {
+    color: #767e96;
+    background-color: white;
+    border: 1px solid #242e4c;
+}
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+    z-index: 10;
+    transition: transform 0.1s linear;
+  }
+  
+  .modal-close:hover {
+    transform: rotate(90deg);
+  }
+
+  .snow {
+    animation: fall 3s linear forwards;
+    background-color: white;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    top: -5vh;
+    bottom: 0;
+    position: fixed;
+  }
+
+  @keyframes fall {
+    0% {
+        transform: translateY(-5vh);
+    }
+    100% {
+        transform: translateY(110vh);
+    }
+  }

@@ -1,0 +1,129 @@
+.form-main-container {
+    max-width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.search-box {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto;
+}
+
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+}
+
+tr:hover {
+    background-color: #ed7ba1;
+}
+
+button {
+    font-size: 12px;
+    padding: 0px;
+    border: none;
+    background: white;
+    cursor: pointer;
+}
+
+.delete_button {
+    color: rgb(231, 63, 63);
+}
+
+.delete-mutiple-button {
+    background-color: #ed7ba1;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    font-size: 14px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.delete-mutiple-button:hover {
+    background-color: #E04D78;
+}
+
+.button-conatiner {
+    padding: 20px 0;
+    text-align: left;
+}
+
+#pagination-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+#pagination-container button {
+    background-color: cadetblue;
+    color: white;
+    border-radius: 50%;
+    font-size: 14px;
+    padding: 5px 15px;
+}
+
+#pagination-container button.active {
+    background-color: white;
+    color: cadetblue;
+    border: 1px solid cadetblue;
+}
+
+#pagination-container button:hover {
+    background-color: rgb(36, 103, 105);
+    color: white;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .delete-mutiple-button {
+        width: 100%;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    .button-conatiner {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    th, td {
+        padding: 6px;
+    }
+
+    button img {
+        width: 16px;
+        height: 16px;
+    }
+}
